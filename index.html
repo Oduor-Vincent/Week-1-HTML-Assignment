@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about modern web development with HTML5, accessibility best practices, and SEO fundamentals."
+    />
+    <meta
+      name="keywords"
+      content="HTML5, web accessibility, SEO, semantic HTML, web development"
+    />
+    <meta name="author" content="Vincent Oduor" />
+    <title>HTML5 Accessibility & SEO Basics | Web Development Guide</title>
+
+    <!-- Accessibility: Helps prevent browsers from unexpectedly switching to reader mode -->
+    <meta name="robots" content="noai, noimageai" />
+
+    <!-- Favicon for better brand recognition -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Skip to content link for keyboard users -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header role="banner">
+      <h1>HTML5 Accessibility & SEO Basics</h1>
+      <p class="tagline">Building websites for everyone and everything</p>
+
+      <!-- Primary navigation -->
+      <nav aria-label="Primary navigation">
+        <h2 class="visually-hidden">Main Menu</h2>
+        <ul>
+          <li><a href="#html5">HTML5 Structure</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#seo">SEO Basics</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" role="main">
+      <article id="html5">
+        <h2>HTML5 Semantic Structure</h2>
+        <p>
+          Modern HTML5 provides semantic elements that clearly describe their
+          meaning to both browsers and developers.
+        </p>
+
+        <section>
+          <h3>Key Semantic Elements</h3>
+          <ul>
+            <li><code>&lt;header&gt;</code> - Introductory content</li>
+            <li><code>&lt;nav&gt;</code> - Navigation links</li>
+            <li><code>&lt;main&gt;</code> - Primary content</li>
+            <li><code>&lt;article&gt;</code> - Self-contained composition</li>
+            <li><code>&lt;section&gt;</code> - Thematic grouping</li>
+            <li><code>&lt;footer&gt;</code> - Closing content</li>
+          </ul>
+        </section>
+
+        <figure>
+          <img
+            src="html5-structure.png"
+            alt="Diagram showing HTML5 semantic layout with header, nav, main, article, section, and footer elements"
+            width="600"
+            height="400"
+          />
+          <figcaption>
+            Visual representation of HTML5 document structure
+          </figcaption>
+        </figure>
+      </article>
+
+      <article id="accessibility">
+        <h2>Web Accessibility Fundamentals</h2>
+        <p>
+          Accessibility ensures your website can be used by people with various
+          disabilities.
+        </p>
+
+        <section>
+          <h3>Key Accessibility Practices</h3>
+          <ol>
+            <li>Use proper heading structure</li>
+            <li>Provide text alternatives for images</li>
+            <li>Ensure sufficient color contrast</li>
+            <li>Make all functionality keyboard accessible</li>
+            <li>Use ARIA landmarks when needed</li>
+          </ol>
+        </section>
+
+        <aside aria-label="Did you know?">
+          <h3>Did You Know?</h3>
+          <p>
+            Over 1 billion people worldwide live with some form of disability.
+            Accessible websites benefit everyone, including people with
+            temporary impairments or situational limitations.
+          </p>
+        </aside>
+      </article>
+
+      <article id="seo">
+        <h2>SEO Basics</h2>
+        <p>
+          Search Engine Optimization helps your content get discovered by
+          relevant audiences.
+        </p>
+
+        <section>
+          <h3>On-Page SEO Techniques</h3>
+          <dl>
+            <dt>Semantic HTML</dt>
+            <dd>
+              Using proper HTML5 elements helps search engines understand your
+              content structure.
+            </dd>
+
+            <dt>Heading Hierarchy</dt>
+            <dd>
+              Organize content with proper heading levels (h1-h6) to establish
+              information hierarchy.
+            </dd>
+
+            <dt>Descriptive Metadata</dt>
+            <dd>
+              Title tags and meta descriptions influence click-through rates
+              from search results.
+            </dd>
+
+            <dt>Alt Text for Images</dt>
+            <dd>
+              Descriptive alt text improves accessibility and helps with image
+              search rankings.
+            </dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+
+    <aside id="resources" aria-label="Additional resources">
+      <h2>Further Reading</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN HTML Documentation</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >WCAG Accessibility Guidelines</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developers.google.com/search/docs"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Google Search Documentation</a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <footer role="contentinfo">
+      <h2 class="visually-hidden">Footer Information</h2>
+      <p>&copy; 2025 HTML5 Accessibility & SEO Basics. All rights reserved.</p>
+      <address>
+        Contact us at <a href="mailto:oduorvincent9157.com">Email</a>
+      </address>
+
+      <!-- Secondary navigation -->
+      <nav aria-label="Legal and policy links">
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Service</a></li>
+          <li><a href="/sitemap">Sitemap</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- Hidden content for screen readers only -->
+    <style>
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #000;
+        color: white;
+        padding: 8px;
+        z-index: 100;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+    </style>
+  </body>
+</html>
